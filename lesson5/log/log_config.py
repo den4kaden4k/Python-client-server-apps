@@ -1,7 +1,9 @@
 import logging
+import os
 
+path_log = os.path.join('log', 'messenger.log')
 logging.basicConfig(
-    filename='log/messenger.log',
+    filename=path_log,
     format='%(asctime)s %(levelname)s %(module)s %(message)s',
     level=logging.DEBUG
 )
