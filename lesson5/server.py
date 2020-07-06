@@ -6,11 +6,12 @@ from log.config_log_server import LOGGER
 from common.decorators import log
 
 
+@log(LOGGER)
 def presence():
     return dict(action='200', timestamp=time.time(), status='answer')
 
 
-@log
+@log(LOGGER)
 def run_server():
     args = parse_args()
     sock = socket(type=SOCK_STREAM)
