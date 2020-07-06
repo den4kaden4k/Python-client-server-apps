@@ -2,7 +2,7 @@ from socket import *
 import time
 from common.utils import *
 import logging
-from log.log_config import LOG
+from log.config_log_client import LOGGER
 
 
 def presence():
@@ -22,7 +22,7 @@ def connect_to_server():
 
 def main():
     sock = connect_to_server()
-    LOG.debug(f'соединение с сервером {sock.getpeername()} установлено')
+    LOGGER.debug(f'соединение с сервером {sock.getpeername()} установлено')
     list_actions = {
         'probe': presence,
         'msg': msg,
@@ -37,7 +37,7 @@ def main():
         action = list_actions[key]()
         send_data(action, sock)
     elif key in list_codes:
-        LOG.debug(f'Получен ответ от сервера {key}')
+        LOGGER.debug(f'Получен ответ от сервера {key}')
         print(key)
 
 

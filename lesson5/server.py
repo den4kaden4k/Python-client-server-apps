@@ -2,13 +2,15 @@ from socket import *
 from common.utils import *
 import time
 import logging
-from log.log_config import LOG
+from log.config_log_server import LOGGER
+from common.decorators import log
 
 
 def presence():
     return dict(action='200', timestamp=time.time(), status='answer')
 
 
+@log
 def run_server():
     args = parse_args()
     sock = socket(type=SOCK_STREAM)
@@ -20,14 +22,14 @@ def run_server():
 def main():
     client, addr = run_server().accept()
     print(f'Соединение установлено: {addr}')
-    LOG.debug(f'Соединение установлено: клиент {addr}')
+    LOGGER.debug(f'Соединение установлено: клиент {addr}')
     action_list = {
         'authenticate': 'authenticate',
         'presence': presence,
         'quit': 'quit',
     }
     data = get_data(client)
-    LOG.debug(f'Сообщение от клиента {addr} - {data}')
+    LOGGER.debug(f'Сообщение от клиента {addr} - {data}')
     key = data['action']
     if key in action_list:
         answer = action_list[data['action']]()
