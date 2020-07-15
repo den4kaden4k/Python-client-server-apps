@@ -21,15 +21,10 @@ def send_message(mes, s):
     try:
         s.send(json.dumps(mes).encode(ENCODING))
         return 1
-    except ConnectionRefusedError:
-        log_message = f'{get_date_time()}: Связь с сервером потеряна'
-        print(log_message)
-        LOGGER.debug(log_message)
-        return 0
-    except ConnectionResetError:
+    except (ConnectionResetError, ConnectionRefusedError) as e:
         log_message = f'{get_date_time()}: Сервер недоступен'
         print(log_message)
-        LOGGER.debug(log_message)
+        LOGGER.critical(e)
         return 0
 
 
@@ -39,15 +34,10 @@ def read_message(s):
         try:
             msg = s.recv(MAX_PACKAGE).decode(ENCODING)
             print(msg)
-        except ConnectionRefusedError:
-            log_message = f'{get_date_time()}: Связь с сервером потеряна'
-            print(f'{log_message} Нажмите Enter для продолжения.')
-            LOGGER.debug(log_message)
-            break
-        except ConnectionResetError:
+        except (ConnectionResetError, ConnectionRefusedError) as e:
             log_message = f'{get_date_time()}: Сервер недоступен.'
             print(f'{log_message} Нажмите Enter для продолжения.')
-            LOGGER.debug(log_message)
+            LOGGER.critical(e)
             break
 
 
@@ -98,7 +88,8 @@ def main():
                     check_online = send_message(message(input_msg, _name), sock)
                 elif not tr.is_alive():
                     break
-            except:
+            except Exception as e:
+                LOGGER.critical(e)
                 break
         tr.join()
         sock.close()
