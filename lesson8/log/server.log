@@ -1,0 +1,12 @@
+2020-07-16 00:09:46,133 DEBUG server.py 00:09:46: [Server started]
+2020-07-16 00:09:55,305 DEBUG decorators.py Функция < join_user > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:09:55.058160', 'name': '111', 'address': ('127.0.0.1', 53292)},), {})
+2020-07-16 00:09:55,305 DEBUG server.py 00:09:55: ('127.0.0.1', 53292): <111> присоединился к чату
+2020-07-16 00:09:55,306 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({<socket.socket fd=540, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53292)>: '00:09:55: 111 присоединился к чату'}, [<socket.socket fd=540, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53292)>]), {})
+2020-07-16 00:14:32,288 DEBUG server.py 00:14:32: [Server started]
+2020-07-16 00:14:41,376 DEBUG decorators.py Функция < join_user > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:14:41.126833', 'name': '111', 'address': ('127.0.0.1', 53318)},), {})
+2020-07-16 00:14:41,376 DEBUG server.py 00:14:41: ('127.0.0.1', 53318): <111> присоединился к чату
+2020-07-16 00:14:41,377 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({<socket.socket fd=540, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53318)>: '00:14:41: 111 присоединился к чату'}, [<socket.socket fd=540, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53318)>]), {})
+2020-07-16 00:16:06,026 DEBUG server.py 00:16:06: [Server started]
+2020-07-16 00:16:06,345 DEBUG decorators.py Функция < join_user > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:16:06.101871', 'name': '111', 'address': ('127.0.0.1', 53324)},), {})
+2020-07-16 00:16:06,345 DEBUG server.py 00:16:06: ('127.0.0.1', 53324): <111> присоединился к чату
+2020-07-16 00:16:06,345 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53324)>: '00:16:06: 111 присоединился к чату'}, [<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53324)>]), {})

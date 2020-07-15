@@ -1,0 +1,17 @@
+2020-07-16 00:09:55,056 DEBUG decorators.py Функция < try_connect > вызвана из функции < main > с аргументами ((), {})
+2020-07-16 00:09:55,057 DEBUG client.py Установлено соединение с сервером ('127.0.0.1', 7777)
+2020-07-16 00:09:55,059 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:09:55.058160', 'name': '111'}, <socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53292), raddr=('127.0.0.1', 7777)>), {})
+2020-07-16 00:09:55,060 DEBUG decorators.py Функция < read_message > вызвана из функции < run > с аргументами ((<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53292), raddr=('127.0.0.1', 7777)>,), {})
+2020-07-16 00:10:02,344 CRITICAL client.py [WinError 10054] Удаленный хост принудительно разорвал существующее подключение: 2020-07-16 00:10:02.338592: Сервер недоступен.
+2020-07-16 00:14:41,124 DEBUG decorators.py Функция < try_connect > вызвана из функции < main > с аргументами ((), {})
+2020-07-16 00:14:41,125 DEBUG client.py Установлено соединение с сервером ('127.0.0.1', 7777)
+2020-07-16 00:14:41,127 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:14:41.126833', 'name': '111'}, <socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53318), raddr=('127.0.0.1', 7777)>), {})
+2020-07-16 00:14:41,127 DEBUG decorators.py Функция < read_message > вызвана из функции < run > с аргументами ((<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53318), raddr=('127.0.0.1', 7777)>,), {})
+2020-07-16 00:14:45,933 CRITICAL client.py [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2020-07-16 00:15:12,885 DEBUG decorators.py Функция < try_connect > вызвана из функции < main > с аргументами ((), {})
+2020-07-16 00:15:55,587 DEBUG decorators.py Функция < try_connect > вызвана из функции < main > с аргументами ((), {})
+2020-07-16 00:16:06,099 DEBUG client.py Установлено соединение с сервером ('127.0.0.1', 7777)
+2020-07-16 00:16:06,105 DEBUG decorators.py Функция < send_message > вызвана из функции < main > с аргументами (({'action': 'presence', 'timestamp': '2020-07-16 00:16:06.101871', 'name': '111'}, <socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53324), raddr=('127.0.0.1', 7777)>), {})
+2020-07-16 00:16:06,106 DEBUG decorators.py Функция < read_message > вызвана из функции < run > с аргументами ((<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53324), raddr=('127.0.0.1', 7777)>,), {})
+2020-07-16 00:16:49,003 DEBUG decorators.py Функция < try_connect > вызвана из функции < main > с аргументами ((), {})
+2020-07-16 00:18:28,711 DEBUG client.py Выход из программы после неудачного соединения с сервером
